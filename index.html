@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+
+</head>
+<body class="bg-black ">
+    <div class="w-full flex flex-row shadow-lg my-9 ">
+        <div class="writeContainer bg-gray-300 w-1/2 h-3/4 ">
+            <div class="flex flex-row bg-white border-b-4 border-green-400 justify-between">
+                <h1 class=" text-xl p-4">index.html</h1>
+                <button class="w-20 h-9 bg-green-400 text-white rounded-lg m-3" id="btn">Run</button>
+            </div>
+            <textarea class="p-1 mt-4  mx-5 w-10/12 " id="addText"></textarea>
+        <div class="bg-white h-14 mt-96"></div>
+        
+        </div>
+
+
+
+        <div class="editContainer bg-gray-900  w-1/2 h-3/4 text-gray-400 shadow-lg " >
+            <div class="bg-gray-800 flex flex-row justify-between border-b-4 border-gray-700">
+                <h1 class="text-white  text-xl  p-4">HTML Editor</h1>
+                <button class="w-20 h-9 bg-red-400 text-white rounded-lg m-3" id="erase" onclick="erase">Close</button>
+            </div>
+            <p class="px-4 py-3">//Welcome to Code Editor</p>
+            <p class="px-4 py-1 " id="display">-></p>
+            <div class="bg-gray-800 h-14 mt-96  position-fix"></div>
+
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
